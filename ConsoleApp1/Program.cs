@@ -21,6 +21,7 @@ static bool IsChuoiNgoac(string str)
     }
     return stack.Count == 0;
 }
-string str = "{[}}";
-Console.WriteLine(IsChuoiNgoac(str));
+string str = "{[}}";//False
+string str2 = "{[()]}";
+Console.WriteLine(IsChuoiNgoac(str2));
 Console.ReadLine();
